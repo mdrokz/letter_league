@@ -1,0 +1,1 @@
+elm make src/Main.elm && mv index.html ./public/index.html
