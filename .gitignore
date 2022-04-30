@@ -2,3 +2,9 @@
 elm-stuff
 # elm-repl generated files
 repl-temp-*
+
+
+# build
+*.scssc
+*.css
+*.map
