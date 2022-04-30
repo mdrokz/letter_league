@@ -1,0 +1,23 @@
+$tile_bg: rgb(247, 215, 178);
+
+.board {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(15, auto);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  align-items: strech;
+  overflow: hidden;
+  margin: 5% 15%;
+}
+
+.tiles {
+  background-color: $tile_bg;
+  border: 1px solid white;
+  aspect-ratio: 1/1;
+}
+
+.heading{
+    display: grid;
+    justify-content: center;
+}

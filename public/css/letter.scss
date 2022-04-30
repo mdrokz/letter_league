@@ -1,0 +1,40 @@
+@mixin card($color) {
+    background-color: $color;
+    // opacity: $alpha;
+    border-radius:  10px;
+    -webkit-transition: all 0s ease-out;
+	-moz-transition: all 0s ease-out;
+	-o-transition: all 0s ease-out;
+	-ms-transition: all 0s ease-out;
+	transition: all 0s ease-out;
+	font-family: Arial, "Helvetica", sans-serif;
+	text-align: center;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 5px 0px 0px $color;
+	box-shadow: 0px 5px 0px 0px $color;
+}
+
+$letter_orange: rgba(254,136,91,1);
+$letter_tray_bg: rgba(0,0,0,0.6);
+
+.trayContainer{
+    display: grid;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    justify-content: center;
+}
+
+.lettertray{
+    display:grid;
+    width: 30rem;
+    @include card($letter_tray_bg);
+    text-align: center;
+    grid-template-columns: repeat(7,auto);
+    grid-column-gap: 5px;
+    padding: 5% 2%;
+}
+
+.alphabet_Container{
+    @include card($letter_orange);
+}
